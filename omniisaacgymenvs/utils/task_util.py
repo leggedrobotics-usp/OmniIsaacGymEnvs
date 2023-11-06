@@ -41,6 +41,7 @@ def import_tasks():
     from omniisaacgymenvs.tasks.factory.factory_task_nut_bolt_screw import FactoryTaskNutBoltScrew
     from omniisaacgymenvs.tasks.franka_cabinet import FrankaCabinetTask
     from omniisaacgymenvs.tasks.franka_deformable import FrankaDeformableTask
+    from omniisaacgymenvs.tasks.go1_terrain import Go1TerrainTask
     from omniisaacgymenvs.tasks.humanoid import HumanoidLocomotionTask
     from omniisaacgymenvs.tasks.ingenuity import IngenuityTask
     from omniisaacgymenvs.tasks.quadcopter import QuadcopterTask
@@ -64,6 +65,7 @@ def import_tasks():
         "FactoryTaskNutBoltScrew": FactoryTaskNutBoltScrew,
         "FrankaCabinet": FrankaCabinetTask,
         "FrankaDeformable": FrankaDeformableTask,
+        "Go1Terrain": Go1TerrainTask,
         "Humanoid": HumanoidLocomotionTask,
         "Ingenuity": IngenuityTask,
         "Quadcopter": QuadcopterTask,
