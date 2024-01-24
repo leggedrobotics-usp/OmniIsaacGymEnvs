@@ -46,20 +46,34 @@ env:
     decimation: 4
 
   defaultJointAngles:  # = target angles when action = 0.0
-    LF_HAA: 0.0    # [rad]
-    LH_HAA: 0.0    # [rad]
-    RF_HAA: 0.0    # [rad]
-    RH_HAA: 0.0    # [rad]
+    # LF_HAA: 0.0    # [rad]
+    # LH_HAA: 0.0    # [rad]
+    # RF_HAA: 0.0    # [rad]
+    # RH_HAA: 0.0    # [rad]
 
-    LF_HFE: .04     # [rad]
-    LH_HFE: .04    # [rad]
-    RF_HFE: .04     # [rad]
-    RH_HFE: .04    # [rad]
+    # LF_HFE: .04     # [rad]
+    # LH_HFE: .04    # [rad]
+    # RF_HFE: .04     # [rad]
+    # RH_HFE: .04    # [rad]
 
-    LF_KFE: -1.092    # [rad]
-    LH_KFE: -1.092     # [rad]
-    RF_KFE: -1.092    # [rad]
-    RH_KFE: -1.092     # [rad]
+    # LF_KFE: -1.092    # [rad]
+    # LH_KFE: -1.092     # [rad]
+    # RF_KFE: -1.092    # [rad]
+    # RH_KFE: -1.092     # [rad]
+    FL_hip_joint: 0.0    # [rad]
+    HL_hip_joint: 0.0    # [rad]
+    FR_hip_joint: 0.0    # [rad]
+    HR_hip_joint: 0.0    # [rad]
+
+    FL_thigh_joint: .04     # [rad]
+    HL_thigh_joint: .04    # [rad]
+    FR_thigh_joint: .04     # [rad]
+    HR_thigh_joint: .04    # [rad]
+
+    FL_calf_joint: -1.092    # [rad]
+    HL_calf_joint: -1.092     # [rad]
+    FR_calf_joint: -1.092    # [rad]
+    HR_calf_joint: -1.092     # [rad]
 
 
   learn:

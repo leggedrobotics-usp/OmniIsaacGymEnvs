@@ -56,9 +56,11 @@ class Go1(Robot):
             assets_root_path = get_assets_root_path()
             if assets_root_path is None:
                 carb.log_error("Could not find nucleus server with /Isaac folder")
-            # self._usd_path = assets_root_path + "/Isaac/Robots/ANYbotics/anymal_instanceable.usd"
-            go1_asset_path = os.path.realpath(os.getcwd()+"/robots/unitree_description/robots/go1/")
-            self._usd_path = go1_asset_path + "/go1.usd"
+            print(f'################      assets_root_path:{assets_root_path}')
+            # self._usd_path = assets_root_path + "/Isaac/Robots/Unitree/go1_instanceable.usd"
+            self._usd_path = assets_root_path + "/Isaac/Robots/Unitree/go1.usd"
+            # go1_asset_path = os.path.realpath(os.getcwd()+"/robots/unitree_description/robots/go1/")
+            # self._usd_path = go1_asset_path + "/go1.usd"
         add_reference_to_stage(self._usd_path, prim_path)
 
         super().__init__(
@@ -69,21 +71,35 @@ class Go1(Robot):
             articulation_controller=None,
         )
 
-        self._dof_names = [
-            "LF_HAA",
-            "LH_HAA",
-            "RF_HAA",
-            "RH_HAA",
-            "LF_HFE",
-            "LH_HFE",
-            "RF_HFE",
-            "RH_HFE",
-            "LF_KFE",
-            "LH_KFE",
-            "RF_KFE",
-            "RH_KFE",
-        ]
+        # self._dof_names = [
+        #     "LF_HAA",
+        #     "LH_HAA",
+        #     "RF_HAA",
+        #     "RH_HAA",
+        #     "LF_HFE",
+        #     "LH_HFE",
+        #     "RF_HFE",
+        #     "RH_HFE",
+        #     "LF_KFE",
+        #     "LH_KFE",
+        #     "RF_KFE",
+        #     "RH_KFE",
+        # ]
 
+        self._dof_names = [
+            "FL_hip_joint",
+            "HL_hip_joint",
+            "FR_hip_joint",
+            "HR_hip_joint",
+            "FL_thigh_joint",
+            "HL_thigh_joint",
+            "FR_thigh_joint",
+            "HR_thigh_joint",
+            "FL_calf_joint",
+            "HL_calf_joint",
+            "FR_calf_joint",
+            "HR_calf_joint",
+        ]
     @property
     def dof_names(self):
         return self._dof_names

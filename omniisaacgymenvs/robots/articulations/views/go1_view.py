@@ -44,7 +44,7 @@ class Go1View(ArticulationView):
 
         super().__init__(prim_paths_expr=prim_paths_expr, name=name, reset_xform_properties=False)
         self._knees = RigidPrimView(
-            prim_paths_expr="/World/envs/.*/go1/.*_thigh",
+            prim_paths_expr="/World/envs/.*/go1/.*_thigh_shoulder",
             name="knees_view",
             reset_xform_properties=False,
             track_contact_forces=track_contact_forces,
